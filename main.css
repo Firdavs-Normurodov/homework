@@ -76,6 +76,7 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     z-index: 1;
+    box-shadow: 2px 2px 5px rgb(189, 189, 189);
 }
 
 .content h1 {
