@@ -13,7 +13,7 @@
 
 body {
   background-color: var(--background);
-  font-family: "Arial", sans-serif; /* Chiroyli shrift */
+  font-family: "Arial", sans-serif;
 }
 
 /* Navbar */
@@ -21,29 +21,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem; /* Bo‘shliqni oshirdik */
-  background-color: rgba(0, 0, 0, 0.7); /* Shaffoflikni oshirdik */
+  padding: 1rem 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
   color: var(--text-color);
-  position: sticky; /* Navbar yuqorida qolsin */
+  position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Soyani qo‘shdik */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar a svg {
   fill: var(--accent-color);
   height: 4rem;
   width: 4rem;
-  transition: transform 0.3s ease; /* Animatsiya */
+  transition: transform 0.3s ease;
 }
 
 .navbar a:hover svg {
-  transform: scale(1.1); /* Hoverda kattalashadi */
+  transform: scale(1.1);
 }
 
 .navbar .icon i {
   cursor: pointer;
-  font-size: 1.8rem; /* Ikonka kattaroq */
+  font-size: 1.8rem;
   color: var(--accent-color);
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -54,19 +54,19 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 6rem;
-  min-height: calc(100vh - 6rem); /* To‘liq ekran balandligi */
+  min-height: calc(100vh - 6rem);
 }
 
 .slider {
   position: relative;
   width: 50rem;
   overflow: hidden;
-  border-radius: 15px; /* Burchaklarni yumshatdik */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Soyani qo‘shdik */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .slider .images {
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Silliqroq animatsiya */
+  transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
   width: 50rem;
   height: 25rem;
   display: flex;
@@ -77,41 +77,41 @@ body {
   height: 25rem;
   object-fit: cover;
   border-radius: 15px;
-  flex-shrink: 0; /* Rasm qisqarmasligi uchun */
+  flex-shrink: 0;
 }
 
 .slider .dashed {
   display: flex;
   justify-content: center;
   gap: 10px;
-  position: absolute; /* Rasm ichida joylashadi */
-  bottom: 1rem; /* Rasmning pastidan 1rem yuqorida */
+  position: absolute;
+  bottom: 1rem;
   left: 0;
-  width: 100%; /* To‘liq kenglik */
+  width: 100%;
   padding: 0 1rem;
-  z-index: 111; /* Rasm ustida turishi uchun */
+  z-index: 111;
 }
 
 .slider .dashed li {
-  width: 0.7rem; /* Kichikroq nuqta */
+  width: 0.7rem;
   height: 0.7rem;
-  background-color: rgba(255, 255, 255, 0.6); /* Yarim shaffof oq */
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Silliq animatsiya */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Engil soya */
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .slider .dashed li:hover {
-  background-color: var(--accent-color); /* Hoverda oltin rang */
-  transform: scale(1.2); /* Biroz kattalashadi */
+  background-color: var(--accent-color);
+  transform: scale(1.2);
 }
 
 .slider .dashed li.active {
-  background-color: var(--accent-color); /* Faol bo‘lganda oltin */
-  width: 0.9rem; /* Kattaroq */
+  background-color: var(--accent-color);
+  width: 0.9rem;
   height: 0.9rem;
-  box-shadow: 0 0 10px var(--accent-color); /* Yorqinroq soya */
+  box-shadow: 0 0 10px var(--accent-color);
 }
 
 .slider .arrows {
@@ -121,12 +121,12 @@ body {
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0 1rem; /* Bo‘shliqni oshirdik */
+  padding: 0 1rem;
 }
 
 .slider .arrows li {
   background-color: rgba(0, 0, 0, 0.8);
-  width: 2.5rem; /* Kattaroq o‘qlar */
+  width: 2.5rem;
   height: 2.5rem;
   display: flex;
   align-items: center;
