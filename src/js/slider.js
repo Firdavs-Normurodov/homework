@@ -1,22 +1,31 @@
 "use strict";
-let nextBtn = document.querySelector(".next");
-let backBtn = document.querySelector(".back");
-let images = document.querySelector(".images");
-let imageItems = document.querySelectorAll(".images li");
+// HTML elementlarini tanlab olish
+const nextBtn = document.querySelector(".next");
+const backBtn = document.querySelector(".back");
+const images = document.querySelector(".images");
+const imageItems = document.querySelectorAll(".images li");
 
 let currentIndex = 0;
-let imageWidth = imageItems[0].clientWidth;
+const imageWidth = imageItems[0].clientWidth;
 
+// Rasmni ko'rsatish funksiyasi
+function showImage() {
+  images.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+  images.style.transition = "transform 0.3s ease";
+}
+
+// Keyingi rasmga o'tish
 nextBtn.addEventListener("click", () => {
   if (currentIndex < imageItems.length - 1) {
     currentIndex++;
-    images.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    showImage();
   }
 });
 
+// Oldingi rasmga qaytish
 backBtn.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--;
-    images.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    showImage();
   }
 });
