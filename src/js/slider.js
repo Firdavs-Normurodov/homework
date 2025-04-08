@@ -8,10 +8,8 @@ const imageItems = document.querySelectorAll(".images li");
 let currentIndex = 0;
 const imageWidth = imageItems[0].clientWidth;
 
-// Rasmni ko'rsatish funksiyasi
 function showImage() {
   images.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-  images.style.transition = "transform 0.3s ease";
 }
 
 // Keyingi rasmga o'tish
