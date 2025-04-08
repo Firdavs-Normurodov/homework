@@ -11,7 +11,6 @@ nextBtn.addEventListener("click", () => {
   if (currentIndex < imageItems.length - 1) {
     currentIndex++;
     images.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-    images.style.transition = "transform 0.5s ease";
   }
 });
 
@@ -19,6 +18,5 @@ backBtn.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--;
     images.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-    images.style.transition = "transform 0.5s ease";
   }
 });
