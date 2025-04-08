@@ -7,13 +7,19 @@
 
 :root {
   --background: #fff;
+  --text-color: #333;
   --accent-color: #ffd700;
+}
+
+.dark-mode {
+  --background: #121212;
   --text-color: #fff;
 }
 
 body {
   background-color: var(--background);
-  font-family: "Arial", sans-serif;
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Navbar */
@@ -29,7 +35,9 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-
+.dark-mode .navbar {
+  background-color: rgba(30, 30, 30, 0.9);
+}
 .navbar a svg {
   fill: var(--accent-color);
   height: 4rem;
@@ -144,4 +152,39 @@ body {
 .slider .arrows li i {
   font-size: 1.4rem;
   color: var(--text-color);
+}
+/* Footer */
+footer {
+  padding: 4rem 2rem;
+  background-color: var(--card-bg);
+  color: var(--secondary-text);
+  text-align: center;
+  border-top: 1px solid var(--shadow);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  margin: 2rem 0;
+}
+
+.footer-social a {
+  color: var(--secondary-text);
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
