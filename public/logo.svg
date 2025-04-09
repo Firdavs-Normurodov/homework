@@ -13,6 +13,7 @@
                 .st0 {
                   fill-rule: evenodd;
                   clip-rule: evenodd;
+                  fill:currentColor;
                 }
               </style>
               <g>
